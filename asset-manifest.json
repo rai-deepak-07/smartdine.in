@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/smartdine.in/static/css/main.f507d2d1.css",
-    "main.js": "/smartdine.in/static/js/main.3770b75d.js",
+    "main.js": "/smartdine.in/static/js/main.97d75da7.js",
     "static/media/bootstrap-icons.woff?": "/smartdine.in/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/smartdine.in/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "static/media/header_logo.png": "/smartdine.in/static/media/header_logo.d372f4a7ed27676788e9.png",
     "static/media/res_place.jpg": "/smartdine.in/static/media/res_place.e4c495fb19f2a7d1f696.jpg",
     "index.html": "/smartdine.in/index.html",
     "main.f507d2d1.css.map": "/smartdine.in/static/css/main.f507d2d1.css.map",
-    "main.3770b75d.js.map": "/smartdine.in/static/js/main.3770b75d.js.map"
+    "main.97d75da7.js.map": "/smartdine.in/static/js/main.97d75da7.js.map"
   },
   "entrypoints": [
     "static/css/main.f507d2d1.css",
-    "static/js/main.3770b75d.js"
+    "static/js/main.97d75da7.js"
   ]
 }
