@@ -1,0 +1,269 @@
+/* ============================================================================
+   SMARTDINE LANDING PAGE - PROFESSIONAL CSS
+   All classes prefixed with 'sd-' to avoid Bootstrap conflicts
+   Uses Bootstrap grid/sizing for perfect mobile responsiveness
+   ============================================================================ */
+
+/* ============================================================================
+   ROOT VARIABLES & BASE STYLES
+   ============================================================================ */
+:root {
+    --sd-primary: #FF6B35;
+    --sd-primary-light: #FF8A65;
+    --sd-secondary: #2563EB;
+    --sd-light-bg: #F8FAFC;
+    --sd-card-bg: #FFFFFF;
+    --sd-text-primary: #1E293B;
+    --sd-text-secondary: #64748B;
+    --sd-border-light: #E2E8F0;
+    --sd-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* body {
+    font-family: 'Poppins', -apple-system, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+    color: #2d3748;
+} */
+
+
+/* ============================================================================
+   HERO SECTION
+   ============================================================================ */
+.sd-hero-section {
+    min-height: calc(100vh - 150px);
+    padding-top: 100px !important;
+    /* background: linear-gradient(135deg, rgba(255, 107, 53, 0.03) 0%, rgba(45, 55, 72, 0.03) 100%); */
+}
+
+/* Stats Cards */
+.sd-stat-card {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.08) 0%, rgba(229, 90, 43, 0.06) 100%);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.sd-stat-card:hover {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.12) 0%, rgba(229, 90, 43, 0.1) 100%);
+    transform: translateY(-3px);
+}
+
+/* Glass Cards */
+.sd-glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+.sd-glass-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Benefit Cards */
+.sd-benefit-card {
+    transition: all 0.3s ease;
+}
+
+.sd-hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+
+.sd-stat-card.badge-style {
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background: linear-gradient(145deg, #667eea 10%, #FF6B35 100%);
+  border: none;
+  transition: all 0.3s ease;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sd-stat-card.badge-style:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4) !important;
+}
+
+.sd-stat-card .h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .sd-stat-card .h3 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+/* ============================================================================
+   FEATURES SECTION
+   ============================================================================ */
+.sd-bg-gradient-br {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
+}
+
+.sd-pro-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.sd-pro-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    border-color: rgba(255, 107, 35, 0.2);
+}
+
+.sd-icon-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 107, 35, 0.1);
+}
+
+.sd-pro-card:hover .sd-icon-circle {
+    background: linear-gradient(135deg, #fff5f2 0%, #ffe8d9 100%);
+    border-color: rgba(255, 107, 35, 0.3);
+    box-shadow: 0 0 0 4px rgba(255, 107, 35, 0.1);
+}
+
+.sd-icon-main {
+    background: linear-gradient(135deg, #FF6B35, #F7931E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+}
+
+.sd-pro-card:hover .sd-icon-main {
+    transform: scale(1.1);
+}
+
+/* Badges */
+.sd-badge-gradient {
+    background: linear-gradient(135deg, #FF6B35, #F7931E) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.sd-bg-success-subtle {
+    background: rgba(16, 185, 129, 0.1) !important;
+    border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+.sd-bg-primary-subtle {
+    background: rgba(59, 130, 246, 0.1) !important;
+    border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+
+/* ============================================================================
+   BUTTONS - Custom Primary
+   ============================================================================ */
+.btn-primary {
+    background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 100%) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 14px 28px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 15px 35px rgba(255, 107, 53, 0.4) !important;
+}
+
+/* ============================================================================
+   RESPONSIVE - Mobile First
+   ============================================================================ */
+@media (max-width: 768px) {
+    .sd-icon-circle { width: 60px; height: 60px; }
+    .sd-faq-number { width: 36px; height: 36px; font-size: 0.8rem; }
+    .sd-faq-arrow { width: 32px; height: 32px; }
+    .sd-social-icon { width: 40px; height: 40px; font-size: 1.1rem; }
+    .sd-review-card-compact { flex: 0 0 240px !important; height: 200px !important; }
+    .sd-marquee-track { animation-duration: 5s; gap: 15px; }
+}
+
+@media (max-width: 576px) {
+    .row.align-items-center > div[class*="col-"]:first-child { 
+        order: 1; 
+        text-align: center; 
+        margin-top: 1rem; 
+    }
+    .row.align-items-center > div[class*="col-"]:last-child { 
+        order: 2; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .sd-review-card-compact { flex: 0 0 320px !important; height: 240px !important; }
+    .sd-marquee-track { animation-duration: 20s; gap: 25px; }
+}
+
+
+
+
+
+
+
+.vc-section {
+  background: #f8f9fa;
+}
+
+.vc-main-icon,
+.vc-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #FF6B35, #F7931E);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto;
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+
+}
+
+.vc-main-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.vc-card {
+  background: white;
+  border-radius: 13px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.vc-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.vc-section .lead span {
+  color: #FF6B35;
+}
+
+.vc-number {
+  color: #FF6B35;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
